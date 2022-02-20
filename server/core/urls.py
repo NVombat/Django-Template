@@ -19,8 +19,8 @@ from django.conf import settings
 from django.contrib import admin
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include("mainapp.urls")),
+    path("admin/", admin.site.urls),
+    path("", include("mainapp.urls")),
 ]
 
 if settings.DEBUG:
